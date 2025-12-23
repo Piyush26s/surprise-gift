@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sirf Tere Liye 🌸❤️</title>
+<title>Warning: Kholna Mat! ⚠️</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
 <style>
   body {
     margin: 0;
     height: 100vh;
-    /* Soft Romantic Gradient */
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,30 +19,29 @@
     position: relative;
   }
 
-  /* Background Floating Elements */
   .falling-item {
     position: absolute;
     top: -10%;
-    animation: fallDown 10s linear infinite;
+    animation: fallDown 8s linear infinite;
     z-index: 0;
     pointer-events: none;
-    opacity: 0.7;
+    opacity: 0.6;
+    font-size: 25px;
   }
 
   @keyframes fallDown {
-    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
-    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+    0% { transform: translateY(-10vh) rotate(0deg); }
+    100% { transform: translateY(110vh) rotate(360deg); }
   }
 
   .card {
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.92);
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 25px;
     text-align: center;
     width: 85%;
     max-width: 400px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     position: relative;
     min-height: 380px;
     display: flex;
@@ -51,31 +49,33 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 3px solid #fff;
   }
 
   h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 36px;
-    color: #ff4757;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #d63031;
     margin-bottom: 15px;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
   }
 
   p {
     font-size: 17px;
-    color: #555;
+    color: #333;
     line-height: 1.6;
     margin-bottom: 25px;
+    font-weight: 500;
   }
 
   .highlight {
-    color: #ff4757;
+    color: #e84393;
     font-weight: bold;
+    font-style: italic;
   }
 
   .btn {
-    background: #ff4757;
+    background: #e84393;
     color: white;
     padding: 12px 30px;
     border: none;
@@ -83,35 +83,35 @@
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+    box-shadow: 0 5px 15px rgba(232, 67, 147, 0.3);
     font-weight: 600;
   }
 
   .btn:hover {
-    transform: scale(1.05);
-    background: #ff6b81;
+    transform: translateY(-3px);
+    background: #d63031;
   }
 
   textarea {
     width: 90%;
     height: 80px;
-    border: 2px solid #ff9a9e;
+    border: 2px solid #e84393;
     border-radius: 10px;
     padding: 10px;
     font-family: 'Poppins', sans-serif;
     outline: none;
     resize: none;
     margin-bottom: 15px;
-    background: #fff0f0;
+    background: #fff0f5;
   }
   
   textarea:focus {
-    border-color: #ff4757;
+    border-color: #d63031;
   }
 
   .page {
     display: none;
-    animation: fadeIn 0.8s ease;
+    animation: zoomIn 0.5s ease;
     width: 100%;
   }
 
@@ -119,9 +119,9 @@
     display: block;
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
   }
 
   .btn-group {
@@ -132,13 +132,11 @@
   }
 
   #no-btn {
-    background: #ffffff;
-    color: #333;
-    border: 1px solid #ddd;
+    background: #555;
+    color: #fff;
     position: absolute;
     z-index: 100;
   }
-
 </style>
 </head>
 <body>
@@ -148,76 +146,70 @@
 <div class="card">
   
   <div id="page1" class="page active">
-    <h1>Oye Sunn... 👀</h1>
+    <h1>Oye Sunn! 🛑</h1>
     <p>
-      Tujhe ek baat batani thi...<br>
-      Jab tu hasti hai na? <br>
-      Kasam se, <span class="highlight">Dil Garden-Garden</span> ho jaata hai! 🌸❤️<br><br>
-      (Thoda zyada ho gaya kya? 😜)
+      Tere baare mein ek complaint aayi hai...<br>
+      Bahut serious matter hai.<br><br>
+      (Mazak nahi kar raha hoon) 🤫
     </p>
-    <button class="btn" onclick="nextPage(2)">Nahi, Aage Bol... 👉</button>
+    <button class="btn" onclick="nextPage(2)">Kya kiya maine? 😳</button>
   </div>
 
   <div id="page2" class="page">
-    <h1>Sach Bolun? 🥺</h1>
+    <h1>Problem Ye Hai... 😤</h1>
     <p>
-      Dosti toh hai... par ab tujhse<br>
-      thoda <span class="highlight">Zyada Wala</span> connection feel hota hai. ✨<br><br>
-      Tu mere din ki sabse pyaari<br>
-      Notification hai! 📲💖
+      Tu din bhar mere dimaag mein ghoomti rehti hai.<br>
+      Aur Rent bhi nahi deti! 🙄<br><br>
+      Waise toh tu badi <span class="highlight">Nautanki</span> hai,<br>
+      Par thodi 'Cute' wali. 😜❤️
     </p>
-    <button class="btn" onclick="nextPage(3)">Hmm... Phir? 🤔</button>
+    <button class="btn" onclick="nextPage(3)">Achaa Ji? 😏</button>
   </div>
 
   <div id="page3" class="page">
-    <h1>Toh Ayushi... 🌹</h1>
+    <h1>Toh Maine Socha... 🤔</h1>
     <p>
-      Main tujhe Hamesha pareshan karna chahta hu.<br>
-      Sirf as a Bestie nahi...<br>
-      Par usse thoda zyada banke. 🙈<br><br>
-      <strong style="font-size: 20px; color: #ff4757;">Will you be my 'Partner in Crime'? ❤️</strong>
+      Iss musibat ko permanent hi kar lete hain.<br>
+      Jhel lunga tujhe... shayad.<br><br>
+      <strong style="font-size: 19px; color: #d63031;">Will you be my 'Sar Dard' Forever? 🤯❤️</strong>
     </p>
     
     <div class="btn-group">
-      <button class="btn" onclick="handleYes()">YES 😍</button>
-      <button class="btn" id="no-btn" onmouseover="moveNo()" onclick="moveNo()">NO 🙄</button>
+      <button class="btn" onclick="handleYes()">Haan, Banungi! 😂</button>
+      <button class="btn" id="no-btn" onmouseover="moveNo()" onclick="moveNo()">Bhaag Yahan Se 😒</button>
     </div>
   </div>
 
   <div id="page4" class="page">
-    <h1>Haaye Main Marjawaan! 🙈❤️</h1>
+    <h1>Hahaha! LOL! 😂📸</h1>
     <p>
-      Maan gayi!! 🥳💃<br>
-      Ab tu officially phas gayi mere saath! <br>
-      Promise, hamesha tera mood theek karunga! 🍫<br>
+      Phas gayi! Screenshot le liya maine! 😎<br>
+      Ab toh 'Yes' bol diya.<br>
+      <span class="highlight">No Return Policy Applied!</span> ❌<br>
       <br>
-      Chal ab ek pyaara sa reply likh 👇
+      Chal ab sorry bol mujhe pareshan karne ke liye 👇
     </p>
     
-    <textarea id="messageBox" placeholder="I love you too... (aisa kuch likh de 😜)"></textarea>
+    <textarea id="messageBox" placeholder="Sorry Boss! Maan gayi aapko..."></textarea>
     
-    <button class="btn" onclick="sendToWhatsApp()">Send Reply 💌</button>
+    <button class="btn" onclick="sendToWhatsApp()">Send Apology 💌</button>
   </div>
 
 </div>
 
 <script>
   
-  // 👉 TERA NUMBER (Confirmed)
+  // 👉 TERA NUMBER
   const myPhoneNumber = "916260363926"; 
 
-  // Page Navigation
   function nextPage(pageNumber) {
     const pages = document.querySelectorAll('.page');
     pages.forEach(p => p.classList.remove('active'));
     document.getElementById(`page${pageNumber}`).classList.add('active');
   }
 
-  // Running 'No' Button
   function moveNo() {
     const noBtn = document.getElementById("no-btn");
-    
-    // Move to body if inside card
     if (noBtn.parentNode !== document.body) {
         const rect = noBtn.getBoundingClientRect();
         document.body.appendChild(noBtn);
@@ -225,65 +217,49 @@
         noBtn.style.left = rect.left + "px";
         noBtn.style.top = rect.top + "px";
     }
-
     const maxWidth = window.innerWidth - noBtn.offsetWidth - 20;
     const maxHeight = window.innerHeight - noBtn.offsetHeight - 20;
     const randomX = Math.max(10, Math.floor(Math.random() * maxWidth));
     const randomY = Math.max(10, Math.floor(Math.random() * maxHeight));
-
     noBtn.style.left = randomX + "px";
     noBtn.style.top = randomY + "px";
   }
 
-  // Handle Yes
   function handleYes() {
     document.getElementById("page3").classList.remove('active');
     const noBtn = document.getElementById("no-btn");
-    if(noBtn) noBtn.style.display = "none"; // Hide No button
+    if(noBtn) noBtn.style.display = "none"; 
     document.getElementById("page4").classList.add('active');
-    
-    // Blast Confetti
     createConfetti();
   }
 
-  // WhatsApp Integration
   function sendToWhatsApp() {
     const message = document.getElementById("messageBox").value;
     if(message.trim() === "") {
-        alert("Arey dil ki baat toh likh de! 🥺");
+        alert("Arey dar gayi kya? Kuch toh likh! 😂");
         return;
     }
-    const text = `Hey! Maine 'Yes' bol diya! 🙈❤️ Ab hum pakka 'Partner in Crime' hain! ✨ Mera message: ${message}`;
+    const text = `OMG! Maine galti se 'Yes' bol diya! 😂🤦‍♀️ Main banungi tumhari Sar Dard! 🤯 Mera message: ${message}`;
     const url = `https://wa.me/${myPhoneNumber}?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   }
 
-  // ✨ BACKGROUND ANIMATION (Hearts & Flowers)
   function startBackgroundAnimation() {
     const container = document.getElementById("background-container");
-    const items = ["❤️", "🌸", "🌹", "💖", "✨", "🦋"];
-    
+    const items = ["🤪", "❤️", "🙈", "💃", "💖", "🤣"];
     setInterval(() => {
       const item = document.createElement("div");
       item.classList.add("falling-item");
       item.innerText = items[Math.floor(Math.random() * items.length)];
-      
       item.style.left = Math.random() * 100 + "vw";
-      item.style.fontSize = Math.random() * 20 + 20 + "px";
-      item.style.animationDuration = Math.random() * 5 + 5 + "s";
-      
+      item.style.animationDuration = Math.random() * 3 + 5 + "s";
       document.body.appendChild(item);
-
-      // Remove after animation to prevent memory leak
-      setTimeout(() => {
-        item.remove();
-      }, 10000);
-    }, 400); // New item every 400ms
+      setTimeout(() => item.remove(), 8000);
+    }, 500); 
   }
 
-  // Confetti Blast
   function createConfetti() {
-    const colors = ['#ff4757', '#ff6b81', '#ffda79', '#badc58'];
+    const colors = ['#e84393', '#d63031', '#fdcb6e', '#00b894'];
     for (let i = 0; i < 60; i++) {
       const confetti = document.createElement('div');
       confetti.style.position = 'fixed';
@@ -299,11 +275,9 @@
     }
   }
 
-  // Start Animation
   startBackgroundAnimation();
 
 </script>
 
 </body>
 </html>
-
